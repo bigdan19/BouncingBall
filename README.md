@@ -5,3 +5,6 @@ It is designed for iphone 11 pro max
 
 At the moment it is just one level of bricks , and there is no menu
 In the future I will add Main menu and also different levels, bricks, sound effects
+
+
+!gameplay(https://github.com/bigdan19/BrickBreaker/blob/master/main.png?raw=true)
