@@ -7,4 +7,5 @@ At the moment it is just one level of bricks , and there is no menu
 In the future I will add Main menu and also different levels, bricks, sound effects
 
 
-!gameplay(https://github.com/bigdan19/BrickBreaker/blob/main/main.png?raw=true)
+![main](https://user-images.githubusercontent.com/30012737/107855105-6bb18a80-6e18-11eb-8a02-4a2de8f2bf73.png)
+
