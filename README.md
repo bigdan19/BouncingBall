@@ -9,3 +9,6 @@ In the future I will add Main menu and also different levels, bricks, sound effe
 
 ![main](https://user-images.githubusercontent.com/30012737/107855105-6bb18a80-6e18-11eb-8a02-4a2de8f2bf73.png)
 
+![main1](https://user-images.githubusercontent.com/30012737/107855123-8257e180-6e18-11eb-9926-921a5577a892.png)
+
+
