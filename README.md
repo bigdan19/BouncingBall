@@ -1,4 +1,4 @@
-# BouncingBall
+# BrickBreaker
 This is my very first game App using SpriteKit
 
 At the moment it is just one level of bricks , and there is no menu.
