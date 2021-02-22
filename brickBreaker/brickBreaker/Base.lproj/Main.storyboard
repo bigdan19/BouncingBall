@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qai-hQ-PhX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="VLR-L2-VVr">
+            <objects>
+                <viewController id="qai-hQ-PhX" customClass="MainMenuViewController" customModule="brickBreaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Xg-4B-y8F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainMenuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Rvg-2J-puR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrickBreakerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xGD-0T-YaB">
+                                <rect key="frame" x="20" y="164" width="374" height="143"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalCentering" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="A04-xP-eeg">
+                                <rect key="frame" x="85" y="417" width="244" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAK-Sr-72p">
+                                        <rect key="frame" x="0.0" y="0.0" width="244" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="ch0-cu-V73"/>
+                                        </constraints>
+                                        <state key="normal" image="PlayNowWhiteIcon"/>
+                                        <connections>
+                                            <action selector="PlayNowButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="y5W-7Z-zZM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAS-22-rce">
+                                        <rect key="frame" x="0.0" y="105" width="244" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Z5E-ZD-K7k"/>
+                                        </constraints>
+                                        <state key="normal" image="SettingsWhiteIcon"/>
+                                        <connections>
+                                            <action selector="SettingsButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="Ieh-Ii-M2d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEG-d0-jWu">
+                                        <rect key="frame" x="0.0" y="210" width="244" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="244" id="FPc-qi-tM5"/>
+                                            <constraint firstAttribute="height" constant="70" id="FzN-gr-cCn"/>
+                                        </constraints>
+                                        <state key="normal" image="AboutWhiteIcon"/>
+                                        <connections>
+                                            <action selector="AboutButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="kgZ-BN-xAv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0g0-NK-7D5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xGD-0T-YaB" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" constant="20" id="7ch-3c-w14"/>
+                            <constraint firstItem="xGD-0T-YaB" firstAttribute="top" secondItem="0g0-NK-7D5" secondAttribute="top" constant="120" id="BBw-jY-FWj"/>
+                            <constraint firstItem="0g0-NK-7D5" firstAttribute="trailing" secondItem="A04-xP-eeg" secondAttribute="trailing" constant="85" id="Cav-Gh-XM2"/>
+                            <constraint firstAttribute="bottom" secondItem="Rvg-2J-puR" secondAttribute="bottom" id="EAf-KI-m2c"/>
+                            <constraint firstItem="Rvg-2J-puR" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" id="KGq-a8-ZEa"/>
+                            <constraint firstItem="A04-xP-eeg" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" constant="85" id="OV4-VG-SPf"/>
+                            <constraint firstItem="0g0-NK-7D5" firstAttribute="trailing" secondItem="xGD-0T-YaB" secondAttribute="trailing" constant="20" id="Siu-7Y-hCe"/>
+                            <constraint firstItem="Rvg-2J-puR" firstAttribute="trailing" secondItem="0g0-NK-7D5" secondAttribute="trailing" id="Viw-Mw-jzq"/>
+                            <constraint firstItem="A04-xP-eeg" firstAttribute="top" secondItem="xGD-0T-YaB" secondAttribute="bottom" constant="110" id="XSa-cS-mcu"/>
+                            <constraint firstItem="Rvg-2J-puR" firstAttribute="top" secondItem="9Xg-4B-y8F" secondAttribute="top" id="YRn-kG-dQ0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AboutIcon" destination="oEG-d0-jWu" id="wAi-74-28b"/>
+                        <outlet property="PlayNowIcon" destination="yAK-Sr-72p" id="W0a-VF-i8k"/>
+                        <outlet property="SettingsIcon" destination="uAS-22-rce" id="Gmj-Lx-OcA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tii-28-fGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-749.27536231884062" y="153.34821428571428"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="brickBreaker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AboutWhiteIcon" width="276" height="120"/>
+        <image name="BrickBreakerLogo" width="751" height="143"/>
+        <image name="MainMenuBackground" width="1243" height="2688"/>
+        <image name="PlayNowWhiteIcon" width="395" height="120"/>
+        <image name="SettingsWhiteIcon" width="358" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
