@@ -93,7 +93,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oR-ib-jgS">
-                                <rect key="frame" x="20" y="44" width="182" height="51"/>
+                                <rect key="frame" x="20" y="54" width="182" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="182" id="56M-z7-uzg"/>
                                     <constraint firstAttribute="height" constant="51" id="A3L-3J-hGt"/>
@@ -134,7 +134,7 @@
                             <constraint firstAttribute="bottom" secondItem="28q-pD-kE5" secondAttribute="bottom" id="Dnn-b1-3Fp"/>
                             <constraint firstItem="97X-mX-iOD" firstAttribute="trailing" secondItem="UuJ-no-i4F" secondAttribute="trailingMargin" id="KFV-2U-Dee"/>
                             <constraint firstItem="NgT-PW-gfq" firstAttribute="leading" secondItem="fvr-5D-C4w" secondAttribute="leading" constant="40" id="LOo-Qi-h10"/>
-                            <constraint firstItem="0oR-ib-jgS" firstAttribute="top" secondItem="fvr-5D-C4w" secondAttribute="top" id="LRP-jx-2BP"/>
+                            <constraint firstItem="0oR-ib-jgS" firstAttribute="top" secondItem="fvr-5D-C4w" secondAttribute="top" constant="10" id="LRP-jx-2BP"/>
                             <constraint firstItem="qNW-QZ-bV4" firstAttribute="leading" secondItem="0oR-ib-jgS" secondAttribute="leading" id="O4w-96-hgI"/>
                             <constraint firstItem="fvr-5D-C4w" firstAttribute="bottom" secondItem="97X-mX-iOD" secondAttribute="bottom" constant="34" id="QE6-HV-hlC"/>
                             <constraint firstItem="fvr-5D-C4w" firstAttribute="bottom" secondItem="qNW-QZ-bV4" secondAttribute="bottom" constant="8" id="X1f-aA-I2F"/>
