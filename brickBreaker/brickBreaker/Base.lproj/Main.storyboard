@@ -23,68 +23,63 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrickBreakerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xGD-0T-YaB">
                                 <rect key="frame" x="20" y="164" width="374" height="143"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalCentering" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="A04-xP-eeg">
-                                <rect key="frame" x="85" y="417" width="244" height="280"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAK-Sr-72p">
-                                        <rect key="frame" x="0.0" y="0.0" width="244" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="ch0-cu-V73"/>
-                                        </constraints>
-                                        <state key="normal" image="PlayNowWhiteIcon"/>
-                                        <connections>
-                                            <action selector="PlayNowButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="y5W-7Z-zZM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAS-22-rce">
-                                        <rect key="frame" x="0.0" y="105" width="244" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="Z5E-ZD-K7k"/>
-                                        </constraints>
-                                        <state key="normal" image="SettingsWhiteIcon"/>
-                                        <connections>
-                                            <action selector="SettingsButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="Ieh-Ii-M2d"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEG-d0-jWu">
-                                        <rect key="frame" x="0.0" y="210" width="244" height="70"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="244" id="FPc-qi-tM5"/>
-                                            <constraint firstAttribute="height" constant="70" id="FzN-gr-cCn"/>
-                                        </constraints>
-                                        <state key="normal" image="AboutWhiteIcon"/>
-                                        <connections>
-                                            <action selector="AboutButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="kgZ-BN-xAv"/>
-                                            <segue destination="YVW-dn-Y0T" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="IT1-pL-JcZ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAS-22-rce">
+                                <rect key="frame" x="78" y="493" width="258" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="udN-W5-CbL"/>
+                                </constraints>
+                                <state key="normal" image="SettingsWhiteIcon"/>
+                                <connections>
+                                    <action selector="SettingsButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="Ieh-Ii-M2d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAK-Sr-72p">
+                                <rect key="frame" x="77" y="373" width="260" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="cvh-7A-aJT"/>
+                                </constraints>
+                                <state key="normal" image="PlayNowWhiteIcon"/>
+                                <connections>
+                                    <action selector="PlayNowButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="y5W-7Z-zZM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEG-d0-jWu">
+                                <rect key="frame" x="104" y="613" width="206" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="hee-ZU-cYD"/>
+                                </constraints>
+                                <state key="normal" image="AboutWhiteIcon"/>
+                                <connections>
+                                    <action selector="AboutButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="kgZ-BN-xAv"/>
+                                    <segue destination="YVW-dn-Y0T" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="IT1-pL-JcZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0g0-NK-7D5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xGD-0T-YaB" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" constant="20" id="7ch-3c-w14"/>
                             <constraint firstItem="xGD-0T-YaB" firstAttribute="top" secondItem="0g0-NK-7D5" secondAttribute="top" constant="120" id="BBw-jY-FWj"/>
-                            <constraint firstItem="0g0-NK-7D5" firstAttribute="trailing" secondItem="A04-xP-eeg" secondAttribute="trailing" constant="85" id="Cav-Gh-XM2"/>
+                            <constraint firstItem="oEG-d0-jWu" firstAttribute="top" secondItem="uAS-22-rce" secondAttribute="bottom" constant="50" id="DMV-qA-8Mz"/>
                             <constraint firstAttribute="bottom" secondItem="Rvg-2J-puR" secondAttribute="bottom" id="EAf-KI-m2c"/>
                             <constraint firstItem="Rvg-2J-puR" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" id="KGq-a8-ZEa"/>
-                            <constraint firstItem="A04-xP-eeg" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" constant="85" id="OV4-VG-SPf"/>
                             <constraint firstItem="0g0-NK-7D5" firstAttribute="trailing" secondItem="xGD-0T-YaB" secondAttribute="trailing" constant="20" id="Siu-7Y-hCe"/>
+                            <constraint firstItem="uAS-22-rce" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" constant="78" id="T91-sb-XJm"/>
+                            <constraint firstItem="yAK-Sr-72p" firstAttribute="centerX" secondItem="xGD-0T-YaB" secondAttribute="centerX" id="Usk-Zb-0XG"/>
                             <constraint firstItem="Rvg-2J-puR" firstAttribute="trailing" secondItem="0g0-NK-7D5" secondAttribute="trailing" id="Viw-Mw-jzq"/>
-                            <constraint firstItem="A04-xP-eeg" firstAttribute="top" secondItem="xGD-0T-YaB" secondAttribute="bottom" constant="110" id="XSa-cS-mcu"/>
                             <constraint firstItem="Rvg-2J-puR" firstAttribute="top" secondItem="9Xg-4B-y8F" secondAttribute="top" id="YRn-kG-dQ0"/>
+                            <constraint firstItem="uAS-22-rce" firstAttribute="top" secondItem="yAK-Sr-72p" secondAttribute="bottom" constant="50" id="eaH-X2-iTF"/>
+                            <constraint firstItem="oEG-d0-jWu" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" constant="104" id="emx-dP-64i"/>
+                            <constraint firstItem="yAK-Sr-72p" firstAttribute="leading" secondItem="0g0-NK-7D5" secondAttribute="leading" constant="77" id="ex5-Sp-HN7"/>
+                            <constraint firstItem="uAS-22-rce" firstAttribute="centerX" secondItem="yAK-Sr-72p" secondAttribute="centerX" id="glF-8w-B0f"/>
+                            <constraint firstItem="oEG-d0-jWu" firstAttribute="centerX" secondItem="uAS-22-rce" secondAttribute="centerX" id="jc3-6X-AVs"/>
+                            <constraint firstItem="yAK-Sr-72p" firstAttribute="top" secondItem="xGD-0T-YaB" secondAttribute="bottom" constant="66" id="uNL-YR-Pdx"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="AboutIcon" destination="oEG-d0-jWu" id="wAi-74-28b"/>
-                        <outlet property="PlayNowIcon" destination="yAK-Sr-72p" id="W0a-VF-i8k"/>
-                        <outlet property="SettingsIcon" destination="uAS-22-rce" id="Gmj-Lx-OcA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tii-28-fGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1461" y="34"/>
+            <point key="canvasLocation" x="-1462.3188405797102" y="33.482142857142854"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="qJc-nv-Mew">
