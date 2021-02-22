@@ -55,6 +55,7 @@
                                         <state key="normal" image="AboutWhiteIcon"/>
                                         <connections>
                                             <action selector="AboutButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="kgZ-BN-xAv"/>
+                                            <segue destination="YVW-dn-Y0T" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="IT1-pL-JcZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,7 +84,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tii-28-fGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-749.27536231884062" y="153.34821428571428"/>
+            <point key="canvasLocation" x="-1461" y="34"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="qJc-nv-Mew">
+            <objects>
+                <viewController id="YVW-dn-Y0T" customClass="AboutViewController" customModule="brickBreaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UuJ-no-i4F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainMenuBackground" translatesAutoresizingMaskIntoConstraints="NO" id="28q-pD-kE5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oR-ib-jgS">
+                                <rect key="frame" x="20" y="44" width="182" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="56M-z7-uzg"/>
+                                    <constraint firstAttribute="height" constant="51" id="A3L-3J-hGt"/>
+                                </constraints>
+                                <state key="normal" image="BackWhiteIcon"/>
+                                <connections>
+                                    <action selector="GoBackButtonPressed:" destination="YVW-dn-Y0T" eventType="touchUpInside" id="Xxw-9X-lc1"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameCreator" translatesAutoresizingMaskIntoConstraints="NO" id="NgT-PW-gfq">
+                                <rect key="frame" x="40" y="239" width="334" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="pfF-yR-fh8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppVersion" translatesAutoresizingMaskIntoConstraints="NO" id="qNW-QZ-bV4">
+                                <rect key="frame" x="20" y="751" width="197" height="103"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Version" translatesAutoresizingMaskIntoConstraints="NO" id="97X-mX-iOD">
+                                <rect key="frame" x="299" y="777" width="95" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Pmz-KH-Mc5"/>
+                                    <constraint firstAttribute="width" constant="95" id="ULk-nv-CLX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DanielBogucki" translatesAutoresizingMaskIntoConstraints="NO" id="CBB-9D-A6V">
+                                <rect key="frame" x="71" y="334" width="272" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="buj-Wd-H4L"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fvr-5D-C4w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CBB-9D-A6V" firstAttribute="leading" secondItem="fvr-5D-C4w" secondAttribute="leading" constant="71" id="5La-Tx-iFc"/>
+                            <constraint firstItem="28q-pD-kE5" firstAttribute="leading" secondItem="fvr-5D-C4w" secondAttribute="leading" id="Bqp-Ta-URE"/>
+                            <constraint firstAttribute="bottom" secondItem="28q-pD-kE5" secondAttribute="bottom" id="Dnn-b1-3Fp"/>
+                            <constraint firstItem="97X-mX-iOD" firstAttribute="trailing" secondItem="UuJ-no-i4F" secondAttribute="trailingMargin" id="KFV-2U-Dee"/>
+                            <constraint firstItem="NgT-PW-gfq" firstAttribute="leading" secondItem="fvr-5D-C4w" secondAttribute="leading" constant="40" id="LOo-Qi-h10"/>
+                            <constraint firstItem="0oR-ib-jgS" firstAttribute="top" secondItem="fvr-5D-C4w" secondAttribute="top" id="LRP-jx-2BP"/>
+                            <constraint firstItem="qNW-QZ-bV4" firstAttribute="leading" secondItem="0oR-ib-jgS" secondAttribute="leading" id="O4w-96-hgI"/>
+                            <constraint firstItem="fvr-5D-C4w" firstAttribute="bottom" secondItem="97X-mX-iOD" secondAttribute="bottom" constant="34" id="QE6-HV-hlC"/>
+                            <constraint firstItem="fvr-5D-C4w" firstAttribute="bottom" secondItem="qNW-QZ-bV4" secondAttribute="bottom" constant="8" id="X1f-aA-I2F"/>
+                            <constraint firstItem="0oR-ib-jgS" firstAttribute="leading" secondItem="fvr-5D-C4w" secondAttribute="leading" constant="20" id="d9z-oc-MuF"/>
+                            <constraint firstItem="NgT-PW-gfq" firstAttribute="top" secondItem="UuJ-no-i4F" secondAttribute="top" constant="239" id="dUO-Et-ddS"/>
+                            <constraint firstItem="NgT-PW-gfq" firstAttribute="centerX" secondItem="CBB-9D-A6V" secondAttribute="centerX" id="e1S-MX-0lf"/>
+                            <constraint firstItem="28q-pD-kE5" firstAttribute="top" secondItem="UuJ-no-i4F" secondAttribute="top" id="fOt-kH-Trx"/>
+                            <constraint firstItem="CBB-9D-A6V" firstAttribute="top" secondItem="UuJ-no-i4F" secondAttribute="top" constant="334" id="ful-Rj-4ae"/>
+                            <constraint firstItem="NgT-PW-gfq" firstAttribute="centerX" secondItem="28q-pD-kE5" secondAttribute="centerX" id="gZa-9u-JeT"/>
+                            <constraint firstItem="97X-mX-iOD" firstAttribute="leading" secondItem="qNW-QZ-bV4" secondAttribute="trailing" constant="82" id="ozg-R8-GAG"/>
+                            <constraint firstItem="28q-pD-kE5" firstAttribute="trailing" secondItem="fvr-5D-C4w" secondAttribute="trailing" id="uGI-Y2-tvI"/>
+                            <constraint firstItem="qNW-QZ-bV4" firstAttribute="centerY" secondItem="97X-mX-iOD" secondAttribute="centerY" id="yug-MR-Wzx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHQ-bg-7iU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626.08695652173913" y="761.38392857142856"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -95,18 +169,24 @@
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Nw9-m9-69u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="139"/>
+            <point key="canvasLocation" x="-590" y="33"/>
         </scene>
     </scenes>
     <resources>
         <image name="AboutWhiteIcon" width="276" height="120"/>
+        <image name="AppVersion" width="508" height="120"/>
+        <image name="BackWhiteIcon" width="442" height="127"/>
         <image name="BrickBreakerLogo" width="751" height="143"/>
+        <image name="DanielBogucki" width="613" height="120"/>
+        <image name="GameCreator" width="564" height="120"/>
         <image name="MainMenuBackground" width="1243" height="2688"/>
         <image name="PlayNowWhiteIcon" width="395" height="120"/>
         <image name="SettingsWhiteIcon" width="358" height="120"/>
+        <image name="Version" width="202" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
