@@ -8,6 +8,7 @@
 
 import SpriteKit
 import AVKit
+import UIKit
 
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
@@ -19,6 +20,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     var gameOver = false
+    
     
     // Creating bouncing Ball
     let ball = SKSpriteNode(imageNamed: "redball")

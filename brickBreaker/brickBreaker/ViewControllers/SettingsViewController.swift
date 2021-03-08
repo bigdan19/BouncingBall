@@ -13,9 +13,33 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    var ballName = "greyball"
+    
+    
+    @IBOutlet weak var savedLabel: UIImageView!
+    
     @IBAction func goBackButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func greyBallChoosen(_ sender: Any) {
+        ballName = "greyball"
+        if savedLabel.isHidden == true {
+            savedLabel.isHidden = false
+        }
+    }
     
+    @IBAction func blueBallChoosen(_ sender: Any) {
+        ballName = "blueball"
+        if savedLabel.isHidden == true {
+            savedLabel.isHidden = false
+        }
+    }
+    
+    @IBAction func redBallChoosen(_ sender: Any) {
+        ballName = "redball"
+        if savedLabel.isHidden == true {
+            savedLabel.isHidden = false
+        }
+    }
 }
