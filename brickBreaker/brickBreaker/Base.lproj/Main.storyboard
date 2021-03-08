@@ -41,6 +41,7 @@
                                 <state key="normal" image="PlayNowWhiteIcon"/>
                                 <connections>
                                     <action selector="PlayNowButtonPressed:" destination="qai-hQ-PhX" eventType="touchUpInside" id="y5W-7Z-zZM"/>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="Sk6-dg-BaS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEG-d0-jWu">
