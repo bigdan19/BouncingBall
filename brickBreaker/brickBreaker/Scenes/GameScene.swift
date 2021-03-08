@@ -21,7 +21,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var gameOver = false
     
     // Creating bouncing Ball
-    let ball = SKSpriteNode(imageNamed: "ball")
+    let ball = SKSpriteNode(imageNamed: "redball")
     
     
     
@@ -298,7 +298,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         ball.physicsBody?.friction = 0
         ball.physicsBody?.restitution = 1
         ball.physicsBody?.linearDamping = 0
-        ball.physicsBody?.angularDamping = 0
+        ball.physicsBody?.angularDamping = 0.1
         ball.physicsBody!.categoryBitMask = BallCategory
         addChild(ball)
         ball.physicsBody?.contactTestBitMask = BottomCategory | BlockCategory
