@@ -12,6 +12,7 @@
 		652B8FCA24CC698400197D56 /* game_over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 652B8FC924CC698400197D56 /* game_over.mp3 */; };
 		653652F825F6C25D00C7634C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653652F725F6C25D00C7634C /* SettingsViewController.swift */; };
 		6574FD9325F97CD8001565FB /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574FD9225F97CD8001565FB /* LevelViewController.swift */; };
+		6574FD9825F983A0001565FB /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574FD9725F983A0001565FB /* GameModel.swift */; };
 		658A55EC24D1C5B200D64F89 /* bounce_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 658A55EB24D1C5B200D64F89 /* bounce_sound.mp3 */; };
 		658C493C25E419F5005453C1 /* MainMenuSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C493B25E419F5005453C1 /* MainMenuSwiftController.swift */; };
 		658C494325E453B7005453C1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C494225E453B7005453C1 /* AboutViewController.swift */; };
@@ -32,6 +33,7 @@
 		652B8FC924CC698400197D56 /* game_over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game_over.mp3; sourceTree = "<group>"; };
 		653652F725F6C25D00C7634C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6574FD9225F97CD8001565FB /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		6574FD9725F983A0001565FB /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		658A55EB24D1C5B200D64F89 /* bounce_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bounce_sound.mp3; sourceTree = "<group>"; };
 		658C493B25E419F5005453C1 /* MainMenuSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuSwiftController.swift; sourceTree = "<group>"; };
 		658C494225E453B7005453C1 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 				652B8FC524CC626A00197D56 /* background_music.mp3 */,
 			);
 			path = sounds;
+			sourceTree = "<group>";
+		};
+		6574FD9625F98387001565FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6574FD9725F983A0001565FB /* GameModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		658C493A25E419C0005453C1 /* ViewControllers */ = {
@@ -112,6 +122,7 @@
 		65D79A1B2423EA93003944C9 /* brickBreaker */ = {
 			isa = PBXGroup;
 			children = (
+				6574FD9625F98387001565FB /* Model */,
 				658C493E25E41A8C005453C1 /* Scenes */,
 				658C493A25E419C0005453C1 /* ViewControllers */,
 				6510A9DE24358A6600ADF60D /* sounds */,
@@ -207,6 +218,7 @@
 				65D79A1D2423EA93003944C9 /* AppDelegate.swift in Sources */,
 				6574FD9325F97CD8001565FB /* LevelViewController.swift in Sources */,
 				658C494325E453B7005453C1 /* AboutViewController.swift in Sources */,
+				6574FD9825F983A0001565FB /* GameModel.swift in Sources */,
 				658C493C25E419F5005453C1 /* MainMenuSwiftController.swift in Sources */,
 				653652F825F6C25D00C7634C /* SettingsViewController.swift in Sources */,
 			);

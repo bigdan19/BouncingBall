@@ -23,21 +23,21 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func greyBallChoosen(_ sender: Any) {
-        ballName = "greyball"
+        BallData.ballName = "greyball"
         if savedLabel.isHidden == true {
             savedLabel.isHidden = false
         }
     }
     
     @IBAction func blueBallChoosen(_ sender: Any) {
-        ballName = "blueball"
+        BallData.ballName = "blueball"
         if savedLabel.isHidden == true {
             savedLabel.isHidden = false
         }
     }
     
     @IBAction func redBallChoosen(_ sender: Any) {
-        ballName = "redball"
+        BallData.ballName = "redball"
         if savedLabel.isHidden == true {
             savedLabel.isHidden = false
         }

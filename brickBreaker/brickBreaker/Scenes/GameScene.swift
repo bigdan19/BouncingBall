@@ -23,7 +23,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     // Creating bouncing Ball
-    let ball = SKSpriteNode(imageNamed: "redball")
+    let ball = SKSpriteNode(imageNamed: "\(BallData.ballName)")
     
     
     
